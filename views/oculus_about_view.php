@@ -15,6 +15,8 @@
     difficult decisions at maintaining firewalls; <br>
     Feel free to join us and experience our future now ^^;
 </p>
+<!--
 <iframe src="https://erebos.xyz/X/x.php"></iframe>
+-->
 </body>
 </html>

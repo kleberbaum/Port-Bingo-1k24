@@ -29,12 +29,12 @@ input {
     cursor:pointer;
 }
 
-.bc input[type=checkbox]:checked + label {
+input[type=checkbox]:checked + label {
     background: #ff0;
     cursor:pointer;
 }
 
-.obc label {
+.bco label {
     padding: 0.5px 3px;
 }
 
@@ -93,7 +93,7 @@ input {
     padding-bottom: 5px;
 }
 
-.obc td {
+.bco td {
     font-size: 3px;
     text-align: center;
     width: 10px;

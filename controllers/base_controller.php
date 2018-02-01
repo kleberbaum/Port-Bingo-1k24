@@ -133,22 +133,14 @@ if (isset($_GET['oculus'])){
         }
 
         if($_GET['oculus'] == 'about'){
-            logout();
             require_once 'views/oculus_about_view.php';
             return;
         }
 
     }catch (Exception $e){
-        logout();
         // echo $e->getMessage();
         die();
 
-    }
-
-    if($_GET['oculus'] == 'logout'){
-        logout();
-        require_once 'views/oculus_bingo_view.php';
-        return;
     }
 }
 
@@ -299,6 +291,15 @@ function user_del($uname) {
 
 function logout() {
     header('HTTP/1.0 401 Unauthorized');
+
+    if(isset($_SERVER['PHP_AUTH_USER']))
+        // echo $_SERVER['PHP_AUTH_USER'];
+        unset($_SERVER['PHP_AUTH_USER']);
+
+    if (isset($_SERVER['PHP_AUTH_PW']))
+        // echo $_SERVER['PHP_AUTH_PW'];
+        unset($_SERVER['PHP_AUTH_PW']);
+
 }
 
 require_once 'views/base_view.php';

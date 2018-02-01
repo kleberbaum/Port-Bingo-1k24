@@ -28,7 +28,7 @@
         <a href="?oculus=userdel" target="oculus" title="UserDel"><span>&nbsp5</span><span>UserDel</span></a>
         <a href="?oculus=restart" target="oculus" title="Restart"><span>&nbsp6</span><span>Restart</span></a>
         <a href="?oculus=login" target="oculus" title="Login"><span>&nbsp7</span><span>Login</span></a>
-        <a href="?oculus=loguot" target="oculus" title="Logout"><span>&nbsp8</span><span>Logout</span></a>
+        <a href="?oculus=loguot" title="Logout"><span>&nbsp8</span><span>Logout</span></a>
         <a href="?oculus=about" target="oculus" title="About"><span>&nbsp9</span><span>About</span></a>
     </nav>
 </footer>
