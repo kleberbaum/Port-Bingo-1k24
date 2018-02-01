@@ -211,7 +211,7 @@ class User
     // every class should implement the magic __toString method!
     public function __toString()
     {
-        return 'User: '. $this->getUname() . ',' . $this->getBb() . ',' . $this->getBp() . ',' . $this->getWins();
+        return 'User: '. $this->getUname() . ',' . $this->getB() . ',' . $this->getI() . ',' . $this->getN() . ',' . $this->getG() . ',' . $this->getO();
     }
 
 }

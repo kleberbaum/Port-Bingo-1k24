@@ -18,14 +18,14 @@ form {
     width: 70%;
 }
 
-.obc input {
+.bco input {
     position: absolute;
 	width: 0px;
 	height: 0px;
 	opacity: 1;
 }
 
-.obc label {
+.bco label {
     padding: 0.5px 3px;
 }
 
@@ -66,7 +66,7 @@ input[type=submit]:hover {
     padding: 1px;
 }
 
-.obc td {
+.bco td {
     font-size: 3px;
     text-align: center;
     width: 10px;

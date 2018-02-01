@@ -60,8 +60,10 @@ $(function() {
 
             data.forEach(function(user) {
 
+                // alert(user)
+
                 var p = Number(user.split(',')[1]).toString(2).split('');
-                var q = '#' + user.split(',')[0] + ' .obcp';
+                var q = '#' + user.split(',')[0] + ' .bcop';
 
                 var b = [p[1], p[2], p[3], p[4], p[5]],
                     i = [p[6], p[7], p[8], p[9], p[10]],
@@ -107,7 +109,7 @@ $(function() {
                 });
             });
 
-            alert(status);
+            // alert(status);
         });
 
 

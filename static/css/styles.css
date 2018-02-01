@@ -115,7 +115,7 @@ footer nav a span:nth-child(1){
     background: none;
     border: none;
     box-sizing: border-box;
-    width: calc(100% - 239px);
+    width: calc(100% - 250px);
     margin-right: 2px;
     color: #ccc;
 }

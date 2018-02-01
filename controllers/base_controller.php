@@ -18,16 +18,20 @@ $db->exec("CREATE TABLE IF NOT EXISTS users (
                                             o TEXT);");
 */
 
+$message = '';
 $pn = rand(1, 1024);
-if(!isset($_SESSION['c_user'])) {
-    $c_user;
-}
-
-$c_user = &$_SESSION['c_user']; // use '&' !!!
-
 $users = user_gen();
 
-$bc;
+if(!isset($_SESSION['c_user'])) {
+    $c_user = new User('anonymous', 'cisco');
+    $_SESSION['c_user'] = $c_user;
+} else {
+    $c_user = &$_SESSION['c_user'];
+}
+
+$message = ''; //print_r($_SESSION['c_user'], true);
+
+$bc = [];
 
 if(isset($c_user)) {
     $bc = [ 'b' => explode(",", $c_user->getB()),
@@ -45,7 +49,6 @@ if(isset($c_user)) {
     ];
 }
 
-
 if (isset($_GET['oculus'])){
     try{
         if($_GET['oculus'] == 'help'){
@@ -60,15 +63,11 @@ if (isset($_GET['oculus'])){
 
         if($_GET['oculus'] == 'useradd'){
 
-            //user_update(new User('',''));
-
             require_once 'views/oculus_useradd_view.php';
             return;
         }
 
         if($_GET['oculus'] == 'userdel'){
-
-            user_update(new User('',''));
 
             require_once 'views/oculus_userdel_view.php';
             return;
@@ -122,13 +121,24 @@ if (isset($_GET['oculus'])){
                 header('HTTP/1.0 401 Unauthorized');
             }
 
-            require_once 'views/oculus_bingo_view.php';
+            require_once 'views/base_view.php';
             return;
         }
 
         if($_GET['oculus'] == 'logout'){
-            logout();
-            require_once 'views/oculus_bingo_view.php';
+            header('HTTP/1.0 401 Unauthorized');
+
+            if(isset($_SERVER['PHP_AUTH_USER']))
+                // echo $_SERVER['PHP_AUTH_USER'];
+                unset($_SERVER['PHP_AUTH_USER']);
+
+            if (isset($_SERVER['PHP_AUTH_PW']))
+                // echo $_SERVER['PHP_AUTH_PW'];
+                unset($_SERVER['PHP_AUTH_PW']);
+
+            $c_user = new User('anonymous', 'cisco');
+
+            require_once 'views/base_view.php';
             return;
         }
 
@@ -287,19 +297,6 @@ function user_del($uname) {
         die();
 
     }
-}
-
-function logout() {
-    header('HTTP/1.0 401 Unauthorized');
-
-    if(isset($_SERVER['PHP_AUTH_USER']))
-        // echo $_SERVER['PHP_AUTH_USER'];
-        unset($_SERVER['PHP_AUTH_USER']);
-
-    if (isset($_SERVER['PHP_AUTH_PW']))
-        // echo $_SERVER['PHP_AUTH_PW'];
-        unset($_SERVER['PHP_AUTH_PW']);
-
 }
 
 require_once 'views/base_view.php';

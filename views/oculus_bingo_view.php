@@ -67,10 +67,9 @@
         foreach ($users as $user) {
 
             $uname = $user->getUname();
-            if($uname != '' &&  $uname != $c_user->getUname()){
+            if($uname != 'anonymous'){
 
-                echo
-                "<tr>
+                echo "<tr>
                         <td>
                             <input class=\"radiodel\" id=\"rd$uname\" type=\"radio\" name=\"selection\" value=\"$uname\" ><label for=\"rd$uname\"></label>
                         </td>
@@ -80,39 +79,39 @@
                         <td>
                             <table id=\"$uname\" class=\"bco\">
                                 <tr>
-                                    <td><input class=\"obcp\" id=\"b0\" name=\"b0\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"i0\" name=\"i0\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"n0\" name=\"n0\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"g0\" name=\"g0\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"o0\" name=\"o0\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"b0\" name=\"b0\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"i0\" name=\"i0\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"n0\" name=\"n0\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"g0\" name=\"g0\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"o0\" name=\"o0\" type=\"checkbox\" ><label></label></td>
                                 </tr>
                                 <tr>
-                                    <td><input class=\"obcp\" id=\"b1\" name=\"b1\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"i1\" name=\"i1\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"n1\" name=\"n1\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"g1\" name=\"g1\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"o1\" name=\"o1\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"b1\" name=\"b1\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"i1\" name=\"i1\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"n1\" name=\"n1\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"g1\" name=\"g1\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"o1\" name=\"o1\" type=\"checkbox\" ><label></label></td>
                                 </tr>
                                 <tr>
-                                    <td><input class=\"obcp\" id=\"b2\" name=\"b2\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"i2\" name=\"i2\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"n2\" name=\"n2\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"g2\" name=\"g2\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"o2\" name=\"o2\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"b2\" name=\"b2\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"i2\" name=\"i2\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"n2\" name=\"n2\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"g2\" name=\"g2\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"o2\" name=\"o2\" type=\"checkbox\" ><label></label></td>
                                 </tr>
                                 <tr>
-                                    <td><input class=\"obcp\" id=\"b3\" name=\"b3\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"i3\" name=\"i3\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"n3\" name=\"n3\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"g3\" name=\"g3\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"o3\" name=\"o3\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"b3\" name=\"b3\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"i3\" name=\"i3\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"n3\" name=\"n3\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"g3\" name=\"g3\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"o3\" name=\"o3\" type=\"checkbox\" ><label></label></td>
                                 </tr>
                                 <tr>
-                                    <td><input class=\"obcp\" id=\"b4\" name=\"b4\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"i4\" name=\"i4\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"n4\" name=\"n4\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"g4\" name=\"g4\" type=\"checkbox\" ><label></label></td>
-                                    <td><input class=\"obcp\" id=\"o4\" name=\"o4\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"b4\" name=\"b4\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"i4\" name=\"i4\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"n4\" name=\"n4\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"g4\" name=\"g4\" type=\"checkbox\" ><label></label></td>
+                                    <td><input class=\"bcop\" id=\"o4\" name=\"o4\" type=\"checkbox\" ><label></label></td>
                                 </tr>
                             </table>
                         </td>
