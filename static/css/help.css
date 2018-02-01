@@ -17,10 +17,7 @@ input {
 	opacity: 0;
 }
 
-#load * {
-	opacity: 1;
-}
-#load {
+#help {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -28,14 +25,6 @@ input {
     justify-content: center;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(135deg,rgba(0,0,0,.03)25%, transparent 25%, transparent 50%, rgba(0,0,0,.03)50%, rgba(0,0,0,.03)75%, transparent 75%, transparent);
-    background-color: #d1d1d1;
+    background-color: #ddd;
     background-size: 16px 16px;
-}
-
-#load input[type=button] {
-    width: 35%;
-		height: 35%;
-    font-size: 20px;
-    box-sizing: border-box;
 }

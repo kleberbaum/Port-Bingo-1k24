@@ -19,11 +19,12 @@ $(function() {
 					party.loop = true;
 					party.play();
 					party.volume = 0.3;
-
+                    
 					$('body').addClass('party');
                     $('body').addClass('cc');
                     $('article').addClass('party');
-					$('#party span:nth-child(2)').text('Stop Party');
+                    $('th').addClass('party').addClass('cc');
+					$('#party span:nth-child(2)').text('Cisco Disco');
 
 					setInterval(function time() {
 						$('.cc').css({'background-color': cols[offset]});
@@ -36,7 +37,8 @@ $(function() {
 					$('body').removeClass('party');
                     $('body').removeClass('cc');
                     $('article').removeClass('party');
-					$('#party span:nth-child(2)').text('Party');
+                    $('th').removeClass('cc');
+					$('#party span:nth-child(2)').text('Cisco Disco');
 					
 					setTimeout(function(){
                 location.hash = "";

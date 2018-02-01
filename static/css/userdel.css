@@ -1,0 +1,75 @@
+/* CSS-Datei */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+}
+
+*:focus {
+    outline: none;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.obc input {
+    position: absolute;
+	width: 0px;
+	height: 0px;
+	opacity: 1;
+}
+
+.obc label {
+    padding: 0.5px 3px;
+}
+
+input[type=checkbox]:checked + label {
+    background: #ff0;
+    cursor:pointer;
+}
+
+input[type=submit] {
+    font-size: 1em;
+    background: #ccc;
+    cursor:pointer;
+}
+
+input[type=submit]:hover {
+    background: #ff0;
+
+}
+
+#userdel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    background-color: #ddd;
+    background-size: 16px 16px;
+}
+
+.ucol {
+    width: 200px;
+}
+
+.com td {
+    border: 1px solid #000;
+    padding: 1px;
+}
+
+.obc td {
+    font-size: 3px;
+    text-align: center;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+}

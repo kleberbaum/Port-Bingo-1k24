@@ -1,0 +1,58 @@
+/* CSS-Datei */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+}
+
+*:focus {
+    outline: none;
+}
+
+#useradd {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #ddd;
+    background-size: 16px 16px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 70%;
+}
+
+input[type=submit] {
+    margin-top: 39px;
+    font-size: 1em;
+    background: #ccc;
+    cursor:pointer;
+}
+
+input[type=submit]:hover {
+    background: #ff0;
+
+}
+
+td {
+   padding: 5px;
+}
+
+input[type=text], input[type=password] {
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+input[type=button] {
+    width: 20%;
+    font-size: 20px;
+    box-sizing: border-box;
+}

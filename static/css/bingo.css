@@ -1,0 +1,102 @@
+/* CSS-Datei */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+}
+
+*:focus {
+    outline: none;
+}
+
+input {
+    position: absolute;
+	width: 0px;
+	height: 0px;
+	opacity: 1;
+}
+
+.bc input[type=checkbox] + label {
+    padding:10px;
+    margin: 0px 5px;
+    display:block;
+}
+
+.bc input[type=checkbox]:hover + label {
+    background: #ff0;
+    cursor:pointer;
+}
+
+.bc input[type=checkbox]:checked + label {
+    background: #ff0;
+    cursor:pointer;
+}
+
+.obc label {
+    padding: 0.5px 3px;
+}
+
+#bingo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    background-color: #ddd;
+    background-size: 16px 16px;
+}
+.star {
+    display: block;
+    font-size: 1.7em;
+    margin-bottom: 7px;
+}
+
+.next {
+    padding-top: 3px;
+}
+
+.next * {
+    padding: 10px;
+    text-align: center;
+}
+
+.next td {
+    border: 1px solid #000;
+}
+
+.bc {
+    padding-bottom: 35px;
+}
+
+.bc th {
+    padding-bottom: 23px;
+    font-size: 1.5em;
+}
+
+.bc td {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+}
+
+.com {
+    padding-top: 30px;
+}
+
+.com table {
+    padding-left: 12px;
+    padding-bottom: 5px;
+}
+
+.obc td {
+    font-size: 3px;
+    text-align: center;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+}

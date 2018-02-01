@@ -24,7 +24,7 @@ body {
     position: relative;
     min-height: 500px;
     height: 100vh;
-    background-color: #000000;
+    background-color: #000;
 }
 
 .title {
@@ -32,7 +32,7 @@ body {
 }
 
 .title .firstl {
-    color: #dbff00;
+    color: #df0;
 }
 
 header {
@@ -43,16 +43,16 @@ header {
     min-width: 300px;
     min-height: 10vh;
     width: 100%;
-    background-color: #008080;
+    background-color: #088;
 }
 
 article {
     overflow: hidden;
     position: relative;
-    background-color: #000080;
+    background-color: #008;
     width: 100%;
     box-sizing: border-box;
-    border: solid #000080 20px;
+    border: solid #008 20px;
 }
 
 section {
@@ -61,15 +61,17 @@ section {
     align-items: center;
     min-height: calc(90vh - 84px);
     box-sizing: border-box;
-    border: solid #c0c0c0 1px;
+    border: solid #ccc 1px;
 }
 
 #oculus {
     position: relative;
     min-height: 300px;
     min-width: 700px;
-    height: 45vh;
+    height: 65vh;
     width: 70vw;
+    min-height: 690px;
+    min-width: 933px;
 }
 
 
@@ -91,7 +93,7 @@ footer nav {
 
 footer nav a{
     width: 100%;
-    background-color: #008080;
+    background-color: #088;
     color: black;
 }
 
@@ -102,7 +104,7 @@ footer nav a span:nth-child(1){
 }
 
 #cmd {
-    color: #c0c0c0;
+    color: #ccc;
     border: none;
     height: 20px;
     margin: 0 3px;
@@ -115,7 +117,7 @@ footer nav a span:nth-child(1){
     box-sizing: border-box;
     width: calc(100% - 239px);
     margin-right: 2px;
-    color: #c0c0c0;
+    color: #ccc;
 }
 
 .party {
